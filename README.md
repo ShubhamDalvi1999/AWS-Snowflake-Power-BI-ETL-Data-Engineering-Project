@@ -142,18 +142,24 @@ The architecture consists of the following components:
    - 
 ## Lambda functions
 1. Spotify-API-Data-Extract
-   ![image](https://github.com/user-attachments/assets/17fbe0b6-5ea9-4235-b1e3-ec86613e2502)
+  <br>
+ ![image](https://github.com/user-attachments/assets/17fbe0b6-5ea9-4235-b1e3-ec86613e2502)
 
 2. Spotify-API-Data-Transformation
-  ![image](https://github.com/user-attachments/assets/db5c6f61-6434-4c92-8304-51dc67d1701f)
+ <br>
+ ![image](https://github.com/user-attachments/assets/db5c6f61-6434-4c92-8304-51dc67d1701f)
 
 ## S3 Buckets
+<br>
 
 ![image](https://github.com/user-attachments/assets/5969f40e-2c15-4efa-b6df-97016e6988ec)
+<br>
 ![image](https://github.com/user-attachments/assets/e8507304-2c89-4306-9900-43afa02d1700)
+<br>
 ![image](https://github.com/user-attachments/assets/efdaa395-0a81-45c9-a340-f7f5c8f1aebe)
 
 ## Snowflake Data warehouse 
+<br>
 ![image](https://github.com/user-attachments/assets/8a138ee0-1b49-4198-b9a7-aa78e1e05732)
 
 
