@@ -139,7 +139,7 @@ The architecture consists of the following components:
 
 4. Monitor pipeline:
    - Use AWS CloudWatch/EventBridge to monitor pipeline activity and performance.
-   - 
+
 ## Lambda functions
 1. Spotify-API-Data-Extract
   <br
