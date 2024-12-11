@@ -42,7 +42,7 @@
 </p>
 
 <br/>
-<br/>
+![AWS to snowflake](https://github.com/user-attachments/assets/a107675c-9d04-43c2-9c70-e802f196438d)
 <br/>
 
 ## Skills and Technologies
@@ -89,8 +89,6 @@ The architecture is designed to handle raw data ingestion, schema inference, tra
 - **Analytics Enablement**: Querying datasets through Amazon Athena and Snowflake.
 
 ## AWS Architecture
-
-![AWS to snowflake](https://github.com/user-attachments/assets/a107675c-9d04-43c2-9c70-e802f196438d)
 
 The architecture consists of the following components:
 1. **Extract**:
