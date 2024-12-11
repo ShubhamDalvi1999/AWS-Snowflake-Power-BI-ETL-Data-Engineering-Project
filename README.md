@@ -42,8 +42,6 @@
 </p>
 
 <br/>
-<br/>
-<br/>
 
 ## Skills and Technologies
 
