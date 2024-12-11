@@ -42,7 +42,8 @@
 </p>
 
 <br/>
-![AWS to snowflake](https://github.com/user-attachments/assets/0fd84649-4c64-47aa-8b3c-9843bd7e65a6)
+![AWS Architecture](./assets/AWS%20to%20snowflake.jpg)
+
 <br/>
 
 ## Skills and Technologies
