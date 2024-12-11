@@ -1,5 +1,5 @@
 <h2 align="center">
-  Welcome to My AWS-Based NSE Data Analysis Project!
+  Welcome to My AWS Data Pipeline and Analytics Project!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h2>
 
@@ -42,6 +42,8 @@
 </p>
 
 <br/>
+<br/>
+<br/>
 
 ## Skills and Technologies
 
@@ -58,43 +60,86 @@
 
 ## Project Overview
 
-This project combines the power of **PySpark** with **AWS services** to analyze NSE (National Stock Exchange) data efficiently. It demonstrates how cloud computing can be leveraged for large-scale data processing, storage, and analysis. By integrating AWS technologies such as **S3** and **Glue**, this project facilitates efficient handling of historical futures data to identify trading signals based on changes in open interest and closing prices.
+This project showcases the implementation of an **AWS-based ETL pipeline** for extracting, transforming, and analyzing data using modern cloud tools. By leveraging **AWS Lambda**, **AWS S3**, **AWS Glue**, and **Snowflake**, the pipeline provides an efficient and scalable solution for data processing and analytics. 
+
+The architecture is designed to handle raw data ingestion, schema inference, transformation, and storage while enabling advanced analytics through platforms like **Power BI** and **Amazon Athena**.
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Skills Demonstrated](#skills-demonstrated)
 - [AWS Architecture](#aws-architecture)
-- [Data Preprocessing](#data-preprocessing)
-- [Data Transformation](#data-transformation)
-- [Analysis and Filtering](#analysis-and-filtering)
-- [Saving Results](#saving-results)
-- [Visualizing Data](#visualizing-data)
+- [Data Flow](#data-flow)
 - [Usage Instructions](#usage-instructions)
 
 ## Technologies Used
 - **AWS S3**: For storing raw and processed data.
-- **AWS Glue**: For orchestrating ETL jobs.
-- **PySpark**: For distributed data processing.
-- **Pandas**: For additional data manipulation and transformation.
-- **Matplotlib**: For data visualization.
-- **Jupyter Notebook**: For interactive data analysis.
+- **AWS Glue**: For orchestrating ETL workflows and schema inference.
+- **AWS Lambda**: For event-driven processing and transformations.
+- **Amazon Athena**: For querying processed data on demand.
+- **Snowflake**: As the data warehouse for structured storage and analytics.
+- **Power BI**: For interactive visualizations and business intelligence.
+- **Python**: For custom processing and scripting.
 
 ## Skills Demonstrated
-- **Cloud Integration**: Using AWS services for scalable data solutions.
-- **Data Engineering**: Efficient handling and processing of large datasets.
-- **PySpark**: Advanced usage of PySpark DataFrame operations and SQL functions.
-- **Data Transformation**: Converting and cleaning data for analysis.
-- **Data Analysis**: Identifying trading signals based on predefined conditions.
-- **Visualization**: Plotting data distributions for insights.
-- **Performance Optimization**: Using repartitioning and coalescing techniques to manage large datasets.
+- **Cloud Integration**: Leveraging AWS services to build scalable data solutions.
+- **ETL Automation**: Automating data ingestion and transformation workflows using AWS Glue and Lambda.
+- **Data Engineering**: Implementing data pipelines for structured and unstructured datasets.
+- **Data Visualization**: Creating dashboards and insights using Power BI.
+- **Schema Management**: Using Glue Data Catalog and Crawlers for schema inference.
+- **Analytics Enablement**: Querying datasets through Amazon Athena and Snowflake.
 
 ## AWS Architecture
-1. **AWS S3**: Raw data files are uploaded to an S3 bucket. Processed data and final results are also stored here.
-2. **AWS Glue**: ETL jobs are configured to clean, transform, and load data into structured formats for analysis.
-3. **EC2/Jupyter Notebook**: Data analysis and visualization are performed using a Jupyter Notebook hosted on an AWS EC2 instance.
+
+![AWS Architecture](AWS%20to%20snowflake.jpg)
+
+The architecture consists of the following components:
+1. **Extract**:
+   - **Spotify API/Source**: Raw data fetched using Python scripts.
+   - **AWS S3 (Raw)**: Stores the raw data in a dedicated S3 bucket.
+   - **AWS Lambda**: Automates data ingestion and triggers subsequent processes.
+   - **AWS CloudWatch/EventBridge**: Monitors and triggers ETL workflows.
+
+2. **Transform**:
+   - **AWS S3 (Transformed)**: Stores intermediate and transformed data.
+   - **AWS Glue**: Performs schema inference and data cataloging.
+
+3. **Load**:
+   - **AWS Glue Catalog**: Maintains metadata and schema for querying.
+   - **Snowflake**: Acts as the central data warehouse for structured storage and analysis.
+
+4. **Analytics**:
+   - **Power BI**: Enables interactive dashboards and reporting.
+   - **Amazon Athena**: Provides on-demand SQL querying of transformed data.
+
+## Data Flow
+1. **Data Ingestion**:
+   - Raw data is fetched and uploaded to an AWS S3 bucket.
+   - AWS Lambda triggers preprocessing workflows.
+
+2. **Transformation and Schema Management**:
+   - AWS Glue performs schema inference and data cleaning.
+   - Transformed data is stored back into S3.
+
+3. **Storage and Analytics**:
+   - Final data is loaded into Snowflake for analysis.
+   - Power BI is used to create insights and visualizations.
 
 ## Usage Instructions
-1. Upload raw NSE data files to the designated S3 bucket.
-2. Set up AWS Glue ETL jobs or run the PySpark script on an EC2 instance.
-3. Process the data using the Jupyter Notebook or AWS Glue workflow.
-4. Analyze the results saved in the S3 bucket or visualize them locally.
+1. Set up AWS resources:
+   - Create S3 buckets for raw and processed data.
+   - Configure AWS Glue jobs and Crawlers.
+   - Deploy Lambda functions for data ingestion.
+
+2. Integrate with Snowflake:
+   - Configure Snowflake as the data warehouse.
+   - Set up ETL workflows to load data into Snowflake.
+
+3. Visualize data:
+   - Use Power BI to connect to Snowflake or Athena.
+   - Build interactive dashboards for analysis.
+
+4. Monitor pipeline:
+   - Use AWS CloudWatch/EventBridge to monitor pipeline activity and performance.
+
+---
+Feel free to contribute or reach out if you have any suggestions or improvements!
