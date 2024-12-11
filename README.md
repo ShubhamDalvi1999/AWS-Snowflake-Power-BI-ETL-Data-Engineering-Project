@@ -142,11 +142,13 @@ The architecture consists of the following components:
    - 
 ## Lambda functions
 1. Spotify-API-Data-Extract
-  <br>
+  <br
+
  ![image](https://github.com/user-attachments/assets/17fbe0b6-5ea9-4235-b1e3-ec86613e2502)
 
-2. Spotify-API-Data-Transformation
+3. Spotify-API-Data-Transformation
  <br>
+ 
  ![image](https://github.com/user-attachments/assets/db5c6f61-6434-4c92-8304-51dc67d1701f)
 
 ## S3 Buckets
