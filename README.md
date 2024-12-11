@@ -160,6 +160,7 @@ The architecture consists of the following components:
 
 ## Snowflake Data warehouse 
 <br>
+
 ![image](https://github.com/user-attachments/assets/8a138ee0-1b49-4198-b9a7-aa78e1e05732)
 
 
