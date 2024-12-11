@@ -38,7 +38,7 @@
   
  ✌️ &emsp; Enjoy solving data problems <br/><br/>
  ❤️ &emsp; Passionate about big data technologies, cloud platforms, and data visualizations<br/><br/>
- 📧 &emsp; Reach me: dshubhamp1999@gmail.com<br/><br/>
+ 📧 &emsp; Reach me: shubhamdworkmail@gmail.com<br/><br/>
 </p>
 
 <br/>
